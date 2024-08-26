@@ -1,14 +1,2 @@
 # Card-Image-Classification
-The code provides a complete pipeline for training, validating, and testing a deep learning model to classify images of playing cards using PyTorch and the TIMM library. The pipeline involves several key steps:
-
-Dataset Preparation: The PlayingCardDataset class is defined, which loads images using the ImageFolder class and applies transformations like resizing and tensor conversion. Data is then loaded into PyTorch using DataLoader for efficient batching and shuffling.
-
-Model Definition: A custom neural network SimpleCardClassifier is defined, using an EfficientNet backbone from the TIMM library. The model is modified to output the desired number of classes (53 for this case).
-
-Training and Validation: The model is trained using cross-entropy loss and the Adam optimizer. A learning rate scheduler and early stopping are implemented to prevent overfitting. Training and validation losses are tracked and plotted over epochs.
-
-Inference and Visualization: The model is tested on unseen images, and predictions are visualized with probability distributions for each class.
-
-Utility Functions: Various functions for preprocessing images, predicting outcomes, and visualizing results are provided to evaluate the model's performance on new data.
-
-This setup is designed for training a classifier that can distinguish between different playing cards in a dataset, handling the entire process from data loading to model evaluation.
+This code implements a full pipeline for training a deep learning model to classify playing cards using PyTorch and TIMM. It begins by defining a custom dataset class to load and preprocess images, followed by creating a model based on EfficientNet, tailored to output 53 classes. The model is trained using cross-entropy loss with an Adam optimizer, including learning rate scheduling and early stopping to enhance performance. Finally, it includes functions for testing the model on new images and visualizing the prediction results.
