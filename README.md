@@ -1,7 +1,7 @@
 # Card-Image-Classification
 This code trains a PyTorch model to classify playing cards. It sets up a custom dataset, builds a model using EfficientNet, and trains it with cross-entropy loss. The code includes data loading, training, and testing, along with visualization of predictions.
 
-This code provides a complete pipeline for training, validating, and testing a deep learning model to classify images of playing cards using PyTorch and the TIMM library. The pipeline involves several key steps:
+The code provides a complete pipeline for training, validating, and testing a deep learning model to classify images of playing cards using PyTorch and the TIMM library. The pipeline involves several key steps:
 
 Dataset Preparation: The PlayingCardDataset class is defined, which loads images using the ImageFolder class and applies transformations like resizing and tensor conversion. Data is then loaded into PyTorch using DataLoader for efficient batching and shuffling.
 
